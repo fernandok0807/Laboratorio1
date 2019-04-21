@@ -18,17 +18,19 @@ public class Client implements Serializable {
     private String nit;
     private String phone;
     private String address;
+    private int age;
 
     public Client() {
     }
 
-    public Client(Long id, String firstName, String lastName, String nit, String phone, String address) {
+    public Client(Long id, String firstName, String lastName, String nit, String phone, String address,int age) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.nit = nit;
         this.phone = phone;
         this.address = address;
+        this.age = age;
     }
 
     public Long getId() {
@@ -78,6 +80,15 @@ public class Client implements Serializable {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+    
     
     
     
